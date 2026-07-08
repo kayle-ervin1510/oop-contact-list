@@ -6,7 +6,8 @@ class ContactList:
         self.last_name = last_name
         self.number = number
         self.image = image
-        self.call = False
+        self.call = call
+        call = False
     
 
     @property
