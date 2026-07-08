@@ -1,14 +1,20 @@
 class ContactList:
 
 
-    def contact_info(self, first_name, last_name, number, image, call: bool):
+    def contact_info(self, first_name, last_name, number, image, did_call: bool):
         self.first_name = first_name
         self.last_name = last_name
         self.number = number
         self.image = image
-        self.call = call
-        call = False
+        self.did_call = did_call
+        did_call = False
     
+
+ 
+    
+    def call(self, recent_Call):
+        self._call = recent_Call
+        recent_call = True
 
     @property
     def get_number(self):
